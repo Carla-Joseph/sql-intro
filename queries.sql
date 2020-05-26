@@ -34,3 +34,12 @@ SELECT * FROM "Employees";
 
 SELECT "FullName", "PhoneExtension" FROM "Employees" WHERE "IsPartTime" = 'No'
  ;                    
+
+INSERT INTO "Employees" ("FullName", "Salary", "JobPosition", "PhoneExtension"
+ , "IsPartTime") Values ('Kevin Spade', 450, 'Software Developer', 702, 'Yes');  
+
+ UPDATE "Employees" SET "Salary" = 500 WHERE "JobPosition" = 'Cooks';  
+
+ delete from "Employees" Where "FullName" = 'Lazy Larry'; 
+
+ ALTER TABLE "Employees" ADD COLUMN "ParkingSpot" varchar(10);  
